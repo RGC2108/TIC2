@@ -4,10 +4,54 @@
         <meta charset="utf-8">
         <title>Derivado de "Proyecto: página web de viajes"</title>
 	<SCRIPT LANGUAGE="JavaScript">
-		alert("¡Bienvenido a nuestra página")
+		var nom;
+       nom=prompt("ESCRIBE TU NOMBRE","NOMBRE");
+       alert ("Mucho gusto " + nom);
+       
+       function confirmar()
+       {
+       return confirm ("PAGINA PARA MAYORES DE 18")
+       }
+       function abrir_ventana()
+       {
+       window.open("https://r.search.yahoo.com/_ylt=AwrLA02cbNFnqjMaezW_.wt.;_ylu=Y29sbwMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1741806876/RO=10/RU=https%3a%2f%2fwww.wattpad.com%2f%3flocale%3des_ES/RK=2/RS=tsrO7igqY0umB7W4T4RRCH8IFbQ-");
+       }
+       function parar_abrir()
+       {
+       clearTimeout(pop);
+       }
+       pop = setInterval ("abrir_ventana()",3000);
+       
+       function Ver_Hora()
+       {
+       var mihora = new Date()
+       var horas = mihora.getHours().toString();
+       var minutos = mihora.getMinutes().toString();
+       if(minutos.length== 1) minutos= "0" + minutos;
+       var segundos = mihora.getSeconds().toString();
+       if(segundos.length== 1) segundos= "0" + segundos;
+       
+       document.forms[0].mireloj.value = horas + " : " + minutos + " : " + segundos;
+       }
+       function ver_imagen()
+       {
+       
+       }
 	</SCRIPT>		
     </head>
+     <input type=button value=Atrás onclick="history.go(-1)">
+        
 	<body>
+	  <a href="http://recursostic.educacion.es/observatorio/web/gl/software/programacion/490-lorena-arranz" onclick="return confirmar()"> enlace guia java </a>
+       <Input type=button value="stop spam" onclick="parar_abrir()">
+       <form>
+       <p align="center">
+       <input type="text" size="10" name="mireloj">
+       </p>
+       </form>
+       <script>
+       var r= setInterval ("Ver_Hora()" ,500);
+       </script>		
         <img src="Las-mejores-zonas-donde-alojarse-en-la-Isla-de-San-Andres-Colombia.jpg" alt="San Andres" width="250">
         <p>San Andrés is a beautiful island in the Caribbean Sea that is part of <strong class="strong">Colombia.</strong>  It is known for its stunning beaches, crystal-clear waters, and coral reefs. The island is also home to a variety of <em class="em">marine life </em>, making it a popular destination for snorkeling and diving.</p>
         <p> The nature of <strong class="strong"> San Andrés </strong> is characterized by its stunning beaches, crystal-clear waters, and coral reefs. The island is home to a variety of marine life, making it a popular destination for snorkeling and diving. The island is also home to a number of <em class="em"> endemic species </em>, including the San Andrés lizard and the San Andrés crab. </p>
