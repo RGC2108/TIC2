@@ -25,13 +25,13 @@
             font-family: arial;
         }
         table, th,td {
-                border: 1px solid black;
-                width: 50px;
+                border: 100px solid black;
+                width: 500px;
                 border-collapse: collapse;
             }
        .photo-area {
-	width: 10px;
-	height: 13px;
+	width: 100px;
+	height: 130px;
 	padding: 10px;
 	border: 1px solid #666;
 	overflow: hidden;
@@ -40,8 +40,8 @@
 	background: white;
 }
 #photo {
-	width: 10px;
-	height: 10px;
+	width: 100px;
+	height: 100px;
 	background: url(images/mthood.jpg) center center;
 	margin-bottom: 5px;
 }
