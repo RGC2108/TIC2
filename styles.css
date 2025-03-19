@@ -26,12 +26,12 @@
         }
         table, th,td {
                 border: 1px solid black;
-                width: 500px;
+                width: 50px;
                 border-collapse: collapse;
             }
        .photo-area {
-	width: 100px;
-	height: 130px;
+	width: 10px;
+	height: 13px;
 	padding: 10px;
 	border: 1px solid #666;
 	overflow: hidden;
@@ -40,8 +40,8 @@
 	background: white;
 }
 #photo {
-	width: 100px;
-	height: 100px;
+	width: 10px;
+	height: 10px;
 	background: url(images/mthood.jpg) center center;
 	margin-bottom: 5px;
 }
